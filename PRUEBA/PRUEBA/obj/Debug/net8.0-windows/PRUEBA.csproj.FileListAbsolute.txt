@@ -1,0 +1,16 @@
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.exe
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.deps.json
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.runtimeconfig.json
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.dll
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.pdb
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.Form1.resources
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.csproj.GenerateResource.cache
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.AssemblyInfoInputs.cache
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.AssemblyInfo.cs
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.csproj.CoreCompileInputs.cache
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.dll
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\refint\PRUEBA.dll
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.pdb
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.genruntimeconfig.cache
+C:\Users\emaac\source\repos\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\ref\PRUEBA.dll
