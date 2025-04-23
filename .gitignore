@@ -4,3 +4,13 @@ PRUEBA/.vs/ProjectEvaluation/prueba.strings.v9.bin
 PRUEBA/.vs/PRUEBA/FileContentIndex/c0fd2528-9434-416c-8b0c-2283bc5d8739.vsidx
 PRUEBA/.vs/PRUEBA/v17/.futdcache.v2
 PRUEBA/PRUEBA/obj/Debug/net8.0-windows/PRUEBA.sourcelink.json
+PRUEBA/.vs/PRUEBA/FileContentIndex/714c73cd-d876-4337-8bfd-28c08effe50e.vsidx
+
+# Ignorar archivos temporales de Visual Studio y VS Code
+.vs/
+*.db-shm
+*.db-wal
+*.vsidx
+
+# Opcionalmente, si no quieres ignorar ese archivo .cs, puedes quitar esa línea
+
