@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emaac\\source\\repos\\PRUEBA\\PRUEBA\\PRUEBA.csproj",
+      "projectUniqueName": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\PRUEBA.csproj",
       "projectName": "PRUEBA",
-      "projectPath": "C:\\Users\\emaac\\source\\repos\\PRUEBA\\PRUEBA\\PRUEBA.csproj",
+      "projectPath": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\PRUEBA.csproj",
       "packagesPath": "C:\\Users\\emaac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emaac\\source\\repos\\PRUEBA\\PRUEBA\\obj\\",
+      "outputPath": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

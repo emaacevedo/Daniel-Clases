@@ -35,45 +35,49 @@
             btnAccion = new Button();
             label3 = new Label();
             cmbOperacion = new ComboBox();
+            btnMensaje = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(30, 109);
+            label1.Location = new Point(34, 145);
             label1.Name = "label1";
-            label1.Size = new Size(77, 15);
+            label1.Size = new Size(97, 20);
             label1.TabIndex = 0;
             label1.Text = "primer valor: ";
             // 
             // txtPrimerValor
             // 
-            txtPrimerValor.Location = new Point(124, 106);
+            txtPrimerValor.Location = new Point(142, 141);
+            txtPrimerValor.Margin = new Padding(3, 4, 3, 4);
             txtPrimerValor.Name = "txtPrimerValor";
-            txtPrimerValor.Size = new Size(186, 23);
+            txtPrimerValor.Size = new Size(212, 27);
             txtPrimerValor.TabIndex = 1;
             // 
             // txtSegundoValor
             // 
-            txtSegundoValor.Location = new Point(124, 145);
+            txtSegundoValor.Location = new Point(142, 193);
+            txtSegundoValor.Margin = new Padding(3, 4, 3, 4);
             txtSegundoValor.Name = "txtSegundoValor";
-            txtSegundoValor.Size = new Size(186, 23);
+            txtSegundoValor.Size = new Size(212, 27);
             txtSegundoValor.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(30, 148);
+            label2.Location = new Point(34, 197);
             label2.Name = "label2";
-            label2.Size = new Size(88, 15);
+            label2.Size = new Size(110, 20);
             label2.TabIndex = 2;
             label2.Text = "segundo valor: ";
             // 
             // btnAccion
             // 
-            btnAccion.Location = new Point(114, 191);
+            btnAccion.Location = new Point(130, 255);
+            btnAccion.Margin = new Padding(3, 4, 3, 4);
             btnAccion.Name = "btnAccion";
-            btnAccion.Size = new Size(75, 23);
+            btnAccion.Size = new Size(86, 31);
             btnAccion.TabIndex = 4;
             btnAccion.Text = "Calcular";
             btnAccion.UseVisualStyleBackColor = true;
@@ -82,25 +86,38 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 72);
+            label3.Location = new Point(19, 96);
             label3.Name = "label3";
-            label3.Size = new Size(90, 15);
+            label3.Size = new Size(114, 20);
             label3.TabIndex = 5;
             label3.Text = "tipo operacion: ";
             // 
             // cmbOperacion
             // 
             cmbOperacion.FormattingEnabled = true;
-            cmbOperacion.Location = new Point(123, 73);
+            cmbOperacion.Location = new Point(141, 97);
+            cmbOperacion.Margin = new Padding(3, 4, 3, 4);
             cmbOperacion.Name = "cmbOperacion";
-            cmbOperacion.Size = new Size(187, 23);
+            cmbOperacion.Size = new Size(213, 28);
             cmbOperacion.TabIndex = 6;
+            // 
+            // btnMensaje
+            // 
+            btnMensaje.Location = new Point(590, 134);
+            btnMensaje.Margin = new Padding(3, 4, 3, 4);
+            btnMensaje.Name = "btnMensaje";
+            btnMensaje.Size = new Size(86, 31);
+            btnMensaje.TabIndex = 7;
+            btnMensaje.Text = "Saludar";
+            btnMensaje.UseVisualStyleBackColor = true;
+            btnMensaje.Click += btnMensaje_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(btnMensaje);
             Controls.Add(cmbOperacion);
             Controls.Add(label3);
             Controls.Add(btnAccion);
@@ -108,6 +125,7 @@
             Controls.Add(label2);
             Controls.Add(txtPrimerValor);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -124,5 +142,6 @@
         private Button btnAccion;
         private Label label3;
         private ComboBox cmbOperacion;
+        private Button btnMensaje;
     }
 }

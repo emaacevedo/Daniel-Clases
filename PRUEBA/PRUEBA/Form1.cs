@@ -1,3 +1,4 @@
+using PRUEBA.Clases.Funcionalidades;
 using System.Data;
 
 namespace PRUEBA
@@ -11,63 +12,34 @@ namespace PRUEBA
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
-
-
-            if (!decimal.TryParse(txtPrimerValor.Text, out _))
+            try
             {
-                MessageBox.Show("Por favor, ingrese valores numéricos válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //return;
-            }
+                decimal n1 = 0;
+                decimal n2 = 0;
+                decimal resultado = 0;
+                Funcionalidades modelo = new Funcionalidades();
 
-            if (!decimal.TryParse(txtSegundoValor.Text, out _))
-            {
-                MessageBox.Show("Por favor, ingrese valores numéricos válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            decimal valor1 = 0;
-            decimal valor2 = 0;
-            decimal resultado = 0;
-
-            valor1 = Convert.ToDecimal(txtPrimerValor.Text);
-            valor2 = Convert.ToDecimal(txtSegundoValor.Text);
-
-            // Evaluar la operación seleccionada en el ComboBox
-
-            switch (Convert.ToInt32(cmbOperacion.SelectedValue))
-            {
-                case 1:
-                    // Sumar
-                    resultado = valor1 + valor2;
-                    break;
-                case 2:
-                    // Restar
-                    resultado = valor1 - valor2;
-                    break;
-                case 3:
-                    // Multiplicar
-                    resultado = valor1 * valor2;
-                    break;
-                case 4:
-                    // Dividir
-                    if (valor2 == 0)
-                    {
-                        MessageBox.Show("No se puede dividir entre cero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                    resultado = valor1 / valor2;
-                    break;
-                case 5:
-                    // Potencia
-                    resultado = (decimal)Math.Pow((double)valor1, (double)valor2);
-                    break;
-                default:
-                    MessageBox.Show("Operación no válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (!modelo.validador(txtPrimerValor.Text, txtSegundoValor.Text))
+                {
+                    MessageBox.Show("por favor, ingrese valores numéricos válidos.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
-            }
+                }
 
-            // Mostrar el resultado en mensaje
-            MessageBox.Show("El resultado de la suma es: " + resultado.ToString(), "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                n1 = Convert.ToDecimal(txtPrimerValor.Text);
+                n2 = Convert.ToDecimal(txtSegundoValor.Text);
+
+                // Evaluar la operación seleccionada en el ComboBox
+
+                resultado = modelo.operacion(valor1: n1, valor2: n2, operacion: Convert.ToInt32(cmbOperacion.SelectedValue));
+
+                // Mostrar el resultado en mensaje
+                MessageBox.Show("El resultado de la suma es: " + resultado.ToString(), "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -84,9 +56,15 @@ namespace PRUEBA
 
             // Asignar el DataTable como fuente de datos del ComboBox
             cmbOperacion.DataSource = dt;
-            cmbOperacion.DisplayMember = "Nombre"; 
-            cmbOperacion.ValueMember = "ID"; 
+            cmbOperacion.DisplayMember = "Nombre";
+            cmbOperacion.ValueMember = "ID";
 
+        }
+
+        private void btnMensaje_Click(object sender, EventArgs e)
+        {
+            Funcionalidades2 modelo = new Funcionalidades2();
+            modelo.metodo2();
         }
     }
 }
