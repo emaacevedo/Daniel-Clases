@@ -1,0 +1,3 @@
+create database repertorio_musica
+use repertorio_musica
+go

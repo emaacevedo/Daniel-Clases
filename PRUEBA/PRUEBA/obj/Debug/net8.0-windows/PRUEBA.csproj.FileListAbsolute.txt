@@ -31,3 +31,12 @@ C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.dll
 C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\PRUEBA.pdb
 C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.genruntimeconfig.cache
 C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\ref\PRUEBA.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.csproj.AssemblyReference.cache
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.MantoGeneroMusical.resources
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.csproj.Up2Date
