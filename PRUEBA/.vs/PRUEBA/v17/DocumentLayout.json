@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\repo\\Daniel-Clases\\PRUEBA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\mantogeneromusical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\mantogeneromusical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\mantogeneromusical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\mantogeneromusical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\clases\\conexionbd\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\clases\\conexionbd\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\mantoartistascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\mantoartistascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\mantoartistascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\mantoartistascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|c:\\repo\\daniel-clases\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08611419-DA79-48EE-A153-1BF14CA3C26F}|PRUEBA\\PRUEBA.csproj|solutionrelative:prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,58 +37,95 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 211,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Program.cs",
-              "RelativeDocumentMoniker": "PRUEBA\\Program.cs",
-              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Program.cs",
-              "RelativeToolTip": "PRUEBA\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Menu.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\Menu.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PRUEBA\\Menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T03:47:06.308Z",
+              "WhenOpened": "2025-04-30T03:22:40.082Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Menu.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\Menu.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Menu.cs",
+              "RelativeToolTip": "PRUEBA\\Menu.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvxYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T03:19:53.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Form1.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\Form1.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Form1.cs",
+              "RelativeToolTip": "PRUEBA\\Form1.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:54:42.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Clases\\ConexionBD\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "PRUEBA\\Clases\\ConexionBD\\ConexionBD.cs",
-              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Clases\\ConexionBD\\ConexionBD.cs",
-              "RelativeToolTip": "PRUEBA\\Clases\\ConexionBD\\ConexionBD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABlAAAAAAAAAA==",
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Form1.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\Form1.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PRUEBA\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T03:35:33.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MantoGeneroMusical.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoGeneroMusical.cs",
-              "RelativeDocumentMoniker": "PRUEBA\\MantoGeneroMusical.cs",
-              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoGeneroMusical.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PRUEBA\\MantoGeneroMusical.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T03:34:54.018Z",
+              "WhenOpened": "2025-04-30T02:54:40.346Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MantoGeneroMusical.cs",
-              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoGeneroMusical.cs",
-              "RelativeDocumentMoniker": "PRUEBA\\MantoGeneroMusical.cs",
-              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoGeneroMusical.cs",
-              "RelativeToolTip": "PRUEBA\\MantoGeneroMusical.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCIAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MantoArtistascs.cs",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoArtistascs.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\MantoArtistascs.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoArtistascs.cs",
+              "RelativeToolTip": "PRUEBA\\MantoArtistascs.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAiwFwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T03:33:45.816Z",
+              "WhenOpened": "2025-04-30T02:45:48.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MantoArtistascs.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoArtistascs.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\MantoArtistascs.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\MantoArtistascs.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PRUEBA\\MantoArtistascs.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:45:23.902Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Program.cs",
+              "RelativeDocumentMoniker": "PRUEBA\\Program.cs",
+              "ToolTip": "C:\\repo\\Daniel-Clases\\PRUEBA\\PRUEBA\\Program.cs",
+              "RelativeToolTip": "PRUEBA\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T03:47:06.308Z",
               "EditorCaption": ""
             }
           ]

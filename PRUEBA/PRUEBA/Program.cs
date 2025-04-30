@@ -10,11 +10,11 @@ namespace PRUEBA
         [STAThread]
         static void Main()
         {
-            ConexionBD conexionBD = new ConexionBD();   
+            ConexionBD conexion = new ConexionBD();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MantoGeneroMusical(conexionBD));
+            Application.Run(new Menu(conexion));
         }
     }
 }

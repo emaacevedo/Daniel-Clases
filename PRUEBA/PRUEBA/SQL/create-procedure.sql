@@ -37,7 +37,13 @@ go
 
 CREATE PROCEDURE SP_LISTADO_ARTISTAS
 AS
-	SELECT * FROM artistas
+	SELECT 
+		artistas.id,
+		artistas.nombre,
+		genero_musical.nombre as genero_musical
+	FROM 
+		artistas
+		inner join genero_musical on artistas.id_genero = genero_musical.id
 GO
 
 CREATE PROCEDURE SP_INSERTAR_ARTISTAS

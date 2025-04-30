@@ -40,3 +40,5 @@ C:\repo\Daniel-Clases\PRUEBA\PRUEBA\bin\Debug\net8.0-windows\runtimes\win\lib\ne
 C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.csproj.AssemblyReference.cache
 C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.MantoGeneroMusical.resources
 C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.csproj.Up2Date
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.MantoArtistascs.resources
+C:\repo\Daniel-Clases\PRUEBA\PRUEBA\obj\Debug\net8.0-windows\PRUEBA.Menu.resources
