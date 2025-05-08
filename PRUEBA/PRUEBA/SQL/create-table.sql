@@ -12,3 +12,15 @@ create table artistas
 	nombre varchar(100) not null,
 	id_genero int foreign key references genero_musical(id)
 )
+
+go
+
+create table canciones (
+	id int primary key identity(1,1) not null,
+	nombre varchar(100) not null,
+	letra varchar(max) not null,
+	duracion time not null,
+	lanzamiento date not null,
+	id_artista int foreign key references artistas (id),
+
+)

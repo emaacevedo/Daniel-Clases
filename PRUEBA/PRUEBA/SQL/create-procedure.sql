@@ -78,3 +78,60 @@ AS
 
 	select 'Artista eliminado correctamente' as mensaje
 GO
+
+create procedure LISTAR_CANCIONES
+AS
+	SELECT 
+	c.id, 
+	c.nombre, 
+	c.letra,
+	c.duracion,
+	c.lanzamiento,
+	a.nombre as nombre_artista
+	FROM canciones as c 
+	inner join artistas as a on c.id_artista = a.id
+GO
+
+create procedure AGREGAR_CANCIONES
+@nombre varchar (100),
+@letra varchar(max) ,
+@duracion time,
+@lanzamiento date,
+@id_artista int
+as
+	insert into canciones (nombre,letra,duracion,lanzamiento, id_artista)
+	values (@nombre,@letra,@duracion,@lanzamiento,@id_artista)
+
+	select 'cancion guardada correctamente' as mensaje
+go
+
+create procedure ACTUALIZAR_CANCIONES
+@id int,
+@nombre varchar (100),
+@letra varchar(max) ,
+@duracion time,
+@lanzamiento date,
+@id_artista int
+as
+	update canciones set 
+
+	nombre = @nombre,
+	letra = @letra,
+	duracion = @duracion,
+	lanzamiento = @lanzamiento,
+	id_artista = @id_artista
+
+	where id = @id
+
+	select 'cancion actualizada correctamente' as mensaje
+go
+
+create procedure ELIMINAR_CANCIONES
+@id int
+
+as
+	delete from canciones
+	where id = @id
+
+	select 'cancion eliminada correctamente' as mensaje
+go

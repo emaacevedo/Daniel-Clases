@@ -38,5 +38,16 @@ namespace PRUEBA
             MantoGeneroMusical mantoGeneroMusical = new MantoGeneroMusical(_conexion);
             mantoGeneroMusical.ShowDialog();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMantocanciones_Click(object sender, EventArgs e)
+        {
+            MantoCanciones mantoCanciones = new MantoCanciones(_conexion);
+            mantoCanciones.ShowDialog();
+        }
     }
 }

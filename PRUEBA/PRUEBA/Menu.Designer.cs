@@ -31,6 +31,7 @@
             Calculadora = new Button();
             MantoArtistas = new Button();
             MantoGenerosMusicales = new Button();
+            btnMantocanciones = new Button();
             SuspendLayout();
             // 
             // Calculadora
@@ -63,16 +64,28 @@
             MantoGenerosMusicales.UseVisualStyleBackColor = true;
             MantoGenerosMusicales.Click += MantoGenerosMusicales_Click;
             // 
+            // btnMantocanciones
+            // 
+            btnMantocanciones.Location = new Point(12, 99);
+            btnMantocanciones.Name = "btnMantocanciones";
+            btnMantocanciones.Size = new Size(280, 23);
+            btnMantocanciones.TabIndex = 18;
+            btnMantocanciones.Text = "Mantenimiento de canciones";
+            btnMantocanciones.UseVisualStyleBackColor = true;
+            btnMantocanciones.Click += btnMantocanciones_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 632);
+            Controls.Add(btnMantocanciones);
             Controls.Add(MantoGenerosMusicales);
             Controls.Add(MantoArtistas);
             Controls.Add(Calculadora);
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             ResumeLayout(false);
         }
 
@@ -81,5 +94,6 @@
         private Button Calculadora;
         private Button MantoArtistas;
         private Button MantoGenerosMusicales;
+        private Button btnMantocanciones;
     }
 }
