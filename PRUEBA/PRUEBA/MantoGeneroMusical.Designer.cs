@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dgGeneroMusical = new DataGridView();
             label2 = new Label();
             label3 = new Label();
             txtId = new TextBox();
             txtNombre = new TextBox();
             btnGuardar = new Button();
-            btnActualizar = new Button();
-            btnEliminar = new Button();
+            dgGeneroMusical = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgGeneroMusical).BeginInit();
             SuspendLayout();
             // 
@@ -48,14 +46,6 @@
             label1.Size = new Size(240, 15);
             label1.TabIndex = 0;
             label1.Text = "MANTENIMIENTO DE GENEROS MUSICALES";
-            // 
-            // dgGeneroMusical
-            // 
-            dgGeneroMusical.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgGeneroMusical.Location = new Point(12, 92);
-            dgGeneroMusical.Name = "dgGeneroMusical";
-            dgGeneroMusical.Size = new Size(617, 132);
-            dgGeneroMusical.TabIndex = 1;
             // 
             // label2
             // 
@@ -77,6 +67,7 @@
             // 
             // txtId
             // 
+            txtId.Enabled = false;
             txtId.Location = new Point(106, 263);
             txtId.Name = "txtId";
             txtId.Size = new Size(100, 23);
@@ -91,41 +82,29 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(105, 341);
+            btnGuardar.Location = new Point(173, 336);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(118, 23);
             btnGuardar.TabIndex = 6;
-            btnGuardar.Text = "Guardar";
+            btnGuardar.Text = "Guardar Datos";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
-            // btnActualizar
+            // dgGeneroMusical
             // 
-            btnActualizar.Location = new Point(257, 341);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(118, 23);
-            btnActualizar.TabIndex = 7;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
-            btnActualizar.Click += btnActualizar_Click;
-            // 
-            // btnEliminar
-            // 
-            btnEliminar.Location = new Point(414, 341);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(118, 23);
-            btnEliminar.TabIndex = 8;
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
-            btnEliminar.Click += btnEliminar_Click;
+            dgGeneroMusical.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgGeneroMusical.Location = new Point(12, 92);
+            dgGeneroMusical.Name = "dgGeneroMusical";
+            dgGeneroMusical.Size = new Size(617, 132);
+            dgGeneroMusical.TabIndex = 1;
+            dgGeneroMusical.CellDoubleClick += dgGeneroMusical_CellDoubleClick;
+            dgGeneroMusical.UserDeletingRow += dgGeneroMusical_UserDeletingRow;
             // 
             // MantoGeneroMusical
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(641, 595);
-            Controls.Add(btnEliminar);
-            Controls.Add(btnActualizar);
             Controls.Add(btnGuardar);
             Controls.Add(txtNombre);
             Controls.Add(txtId);
@@ -144,13 +123,11 @@
         #endregion
 
         private Label label1;
-        private DataGridView dgGeneroMusical;
         private Label label2;
         private Label label3;
         private TextBox txtId;
         private TextBox txtNombre;
         private Button btnGuardar;
-        private Button btnActualizar;
-        private Button btnEliminar;
+        private DataGridView dgGeneroMusical;
     }
 }

@@ -32,8 +32,6 @@
             cmbArtista = new ComboBox();
             label4 = new Label();
             label2 = new Label();
-            btnEliminar = new Button();
-            btnActualizar = new Button();
             btnGuardar = new Button();
             txtNombre = new TextBox();
             txtId = new TextBox();
@@ -76,33 +74,13 @@
             label2.TabIndex = 28;
             label2.Text = "ID";
             // 
-            // btnEliminar
-            // 
-            btnEliminar.Location = new Point(559, 398);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(118, 23);
-            btnEliminar.TabIndex = 27;
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
-            btnEliminar.Click += btnEliminar_Click;
-            // 
-            // btnActualizar
-            // 
-            btnActualizar.Location = new Point(402, 398);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(118, 23);
-            btnActualizar.TabIndex = 26;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
-            btnActualizar.Click += btnActualizar_Click;
-            // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(250, 398);
+            btnGuardar.Location = new Point(360, 395);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(118, 23);
             btnGuardar.TabIndex = 25;
-            btnGuardar.Text = "Guardar";
+            btnGuardar.Text = "Guardar Datos";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
@@ -115,11 +93,11 @@
             // 
             // txtId
             // 
+            txtId.Enabled = false;
             txtId.Location = new Point(147, 254);
             txtId.Name = "txtId";
             txtId.Size = new Size(100, 23);
             txtId.TabIndex = 23;
-            txtId.TextChanged += txtId_TextChanged;
             // 
             // label3
             // 
@@ -137,6 +115,8 @@
             dgCanciones.Name = "dgCanciones";
             dgCanciones.Size = new Size(805, 132);
             dgCanciones.TabIndex = 21;
+            dgCanciones.CellDoubleClick += dgCanciones_CellDoubleClick;
+            dgCanciones.UserDeletingRow += dgCanciones_UserDeletingRow;
             // 
             // label1
             // 
@@ -210,8 +190,6 @@
             Controls.Add(cmbArtista);
             Controls.Add(label4);
             Controls.Add(label2);
-            Controls.Add(btnEliminar);
-            Controls.Add(btnActualizar);
             Controls.Add(btnGuardar);
             Controls.Add(txtNombre);
             Controls.Add(txtId);
@@ -231,8 +209,6 @@
         private ComboBox cmbArtista;
         private Label label4;
         private Label label2;
-        private Button btnEliminar;
-        private Button btnActualizar;
         private Button btnGuardar;
         private TextBox txtNombre;
         private TextBox txtId;

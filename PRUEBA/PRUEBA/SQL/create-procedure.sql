@@ -25,14 +25,34 @@ AS
 GO
 
 
-CREATE PROCEDURE SP_ELIMINAR_GENERO_MUSICAL
+create PROCEDURE SP_ELIMINAR_GENERO_MUSICAL
 @id int
 AS
-	DELETE FROM genero_musical WHERE id = @id
-
-	select 'Genero musical eliminado correctamente' as mensaje
+	if not exists (select * from artistas where id_genero= @id)
+	begin
+		DELETE FROM genero_musical WHERE id = @id
+		select 'Genero musical eliminado correctamente' as mensaje
+	end
+	else 
+	begin
+		select 'existe un artista con ese genero, favor eliminar primero el artista' as mensaje
+	end
 GO
 
+CREATE PROCEDURE SP_LISTADO_GENEROMUSICAL_ID
+@id int
+AS
+	SELECT 
+		id,
+		nombre
+
+	FROM 
+		 genero_musical
+	WHERE 
+		id = @id
+GO
+
+SELECT * FROM genero_musical
 go
 
 CREATE PROCEDURE SP_LISTADO_ARTISTAS
@@ -44,6 +64,21 @@ AS
 	FROM 
 		artistas
 		inner join genero_musical on artistas.id_genero = genero_musical.id
+GO
+
+
+CREATE PROCEDURE SP_LISTADO_ARTISTAS_ID
+@id int
+AS
+	SELECT 
+		id,
+		nombre,
+		id_genero
+
+	FROM 
+		artistas
+	WHERE 
+		id = @id
 GO
 
 CREATE PROCEDURE SP_INSERTAR_ARTISTAS
@@ -74,9 +109,16 @@ GO
 CREATE PROCEDURE SP_ELIMINAR_ARTISTAS
 @id int
 AS
-	DELETE FROM artistas WHERE id = @id
+	if not exists (select * from canciones where id_artista = @id)
+	begin
+		DELETE FROM artistas WHERE id = @id
 
-	select 'Artista eliminado correctamente' as mensaje
+		select 'Artista eliminado correctamente' as mensaje
+	end
+	else
+	begin
+		select 'Existe una camción con ese artista, favor eliminar primero la canción' as mensaje
+	end
 GO
 
 create procedure LISTAR_CANCIONES
@@ -135,3 +177,20 @@ as
 
 	select 'cancion eliminada correctamente' as mensaje
 go
+
+CREATE PROCEDURE SP_LISTARCANCIONES_ID		
+@id int
+AS
+	SELECT 
+		id,
+		nombre,
+		letra,
+		duracion,
+		lanzamiento,
+		id_artista
+
+	FROM 
+		 canciones
+	WHERE 
+		id = @id
+GO

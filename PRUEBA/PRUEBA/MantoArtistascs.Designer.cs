@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnEliminar = new Button();
-            btnActualizar = new Button();
             btnGuardar = new Button();
             txtNombre = new TextBox();
             txtId = new TextBox();
@@ -42,33 +40,13 @@
             ((System.ComponentModel.ISupportInitialize)dgArtistas).BeginInit();
             SuspendLayout();
             // 
-            // btnEliminar
-            // 
-            btnEliminar.Location = new Point(509, 385);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(118, 23);
-            btnEliminar.TabIndex = 16;
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
-            btnEliminar.Click += btnEliminar_Click;
-            // 
-            // btnActualizar
-            // 
-            btnActualizar.Location = new Point(352, 385);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(118, 23);
-            btnActualizar.TabIndex = 15;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
-            btnActualizar.Click += btnActualizar_Click;
-            // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(200, 385);
+            btnGuardar.Location = new Point(269, 386);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(118, 23);
             btnGuardar.TabIndex = 14;
-            btnGuardar.Text = "Guardar";
+            btnGuardar.Text = "Guardar Datos";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
@@ -81,6 +59,7 @@
             // 
             // txtId
             // 
+            txtId.Enabled = false;
             txtId.Location = new Point(202, 279);
             txtId.Name = "txtId";
             txtId.Size = new Size(100, 23);
@@ -98,10 +77,12 @@
             // dgArtistas
             // 
             dgArtistas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgArtistas.Location = new Point(108, 108);
+            dgArtistas.Location = new Point(103, 111);
             dgArtistas.Name = "dgArtistas";
             dgArtistas.Size = new Size(617, 132);
             dgArtistas.TabIndex = 10;
+            dgArtistas.CellDoubleClick += dgArtistas_CellDoubleClick;
+            dgArtistas.UserDeletingRow += dgArtistas_UserDeletingRow;
             // 
             // label1
             // 
@@ -146,8 +127,6 @@
             Controls.Add(cmbGeneroMusical);
             Controls.Add(label4);
             Controls.Add(label2);
-            Controls.Add(btnEliminar);
-            Controls.Add(btnActualizar);
             Controls.Add(btnGuardar);
             Controls.Add(txtNombre);
             Controls.Add(txtId);
@@ -163,9 +142,6 @@
         }
 
         #endregion
-
-        private Button btnEliminar;
-        private Button btnActualizar;
         private Button btnGuardar;
         private TextBox txtNombre;
         private TextBox txtId;
