@@ -8,13 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PRUEBA
 {
     public partial class MantoArtistascs : Form
     {
-        private readonly ConexionBD _conexion;
-        public MantoArtistascs(ConexionBD conexion)
+        private readonly IConexionBD _conexion;
+        public MantoArtistascs(IConexionBD conexion)
         {
             _conexion = conexion;
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace PRUEBA
 
         private void MantoArtistascs_Load(object sender, EventArgs e)
         {
+            cmbGeneroMusical.DropDownStyle = ComboBoxStyle.DropDownList;           
             CargarDatos();
         }
 
@@ -44,10 +46,10 @@ namespace PRUEBA
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 DataTable result;
-
                 if (txtId.Text == "")
                 {
                     Dictionary<string, object> parametros = new Dictionary<string, object>
@@ -172,7 +174,12 @@ namespace PRUEBA
                 cmbGeneroMusical.SelectedIndex = -1;
                 MessageBox.Show("Error: " + ex.Message);
             }
-            
+
+        }
+
+        private void btnLimpiarFormulario_Click(object sender, EventArgs e)
+        {
+            Limpiar();    
         }
     }
 }

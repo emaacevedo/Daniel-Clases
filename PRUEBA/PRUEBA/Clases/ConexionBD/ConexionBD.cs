@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PRUEBA.Clases.ConexionBD
 {
-    public class ConexionBD
+    public class ConexionBD : IConexionBD
     {
         public DataTable EjecutarProcedimiento(string nombreSP, Dictionary<string, object> parametros)
         {
@@ -38,6 +38,5 @@ namespace PRUEBA.Clases.ConexionBD
                 }
             }
         }
-
     }
 }

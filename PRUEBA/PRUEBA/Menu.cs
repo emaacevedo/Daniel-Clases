@@ -13,8 +13,8 @@ namespace PRUEBA
 {
     public partial class Menu : Form
     {
-        private readonly ConexionBD _conexion;
-        public Menu(ConexionBD _conexion)
+        private readonly IConexionBD _conexion;
+        public Menu(IConexionBD _conexion)
         {
             this._conexion = _conexion;
             InitializeComponent();

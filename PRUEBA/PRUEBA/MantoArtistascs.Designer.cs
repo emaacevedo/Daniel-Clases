@@ -37,6 +37,7 @@
             label2 = new Label();
             label4 = new Label();
             cmbGeneroMusical = new ComboBox();
+            btnLimpiarFormulario = new Button();
             ((System.ComponentModel.ISupportInitialize)dgArtistas).BeginInit();
             SuspendLayout();
             // 
@@ -119,11 +120,22 @@
             cmbGeneroMusical.Size = new Size(284, 23);
             cmbGeneroMusical.TabIndex = 19;
             // 
+            // btnLimpiarFormulario
+            // 
+            btnLimpiarFormulario.Location = new Point(491, 386);
+            btnLimpiarFormulario.Name = "btnLimpiarFormulario";
+            btnLimpiarFormulario.Size = new Size(118, 23);
+            btnLimpiarFormulario.TabIndex = 20;
+            btnLimpiarFormulario.Text = "Limpiar Formulario";
+            btnLimpiarFormulario.UseVisualStyleBackColor = true;
+            btnLimpiarFormulario.Click += btnLimpiarFormulario_Click;
+            // 
             // MantoArtistascs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(868, 590);
+            Controls.Add(btnLimpiarFormulario);
             Controls.Add(cmbGeneroMusical);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -151,5 +163,6 @@
         private Label label2;
         private Label label4;
         private ComboBox cmbGeneroMusical;
+        private Button btnLimpiarFormulario;
     }
 }

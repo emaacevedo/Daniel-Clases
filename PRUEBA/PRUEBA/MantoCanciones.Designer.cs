@@ -45,6 +45,7 @@
             dtFecha_Lanzamiento = new DateTimePicker();
             timer1 = new System.Windows.Forms.Timer(components);
             dtDueracion = new DateTimePicker();
+            btnLimpiarFormulario = new Button();
             ((System.ComponentModel.ISupportInitialize)dgCanciones).BeginInit();
             SuspendLayout();
             // 
@@ -176,11 +177,22 @@
             dtDueracion.Size = new Size(144, 23);
             dtDueracion.TabIndex = 37;
             // 
+            // btnLimpiarFormulario
+            // 
+            btnLimpiarFormulario.Location = new Point(590, 395);
+            btnLimpiarFormulario.Name = "btnLimpiarFormulario";
+            btnLimpiarFormulario.Size = new Size(118, 23);
+            btnLimpiarFormulario.TabIndex = 38;
+            btnLimpiarFormulario.Text = "Limpiar Formulario";
+            btnLimpiarFormulario.UseVisualStyleBackColor = true;
+            btnLimpiarFormulario.Click += btnLimpiarFormulario_Click;
+            // 
             // MantoCanciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(912, 537);
+            Controls.Add(btnLimpiarFormulario);
             Controls.Add(dtDueracion);
             Controls.Add(dtFecha_Lanzamiento);
             Controls.Add(label7);
@@ -222,5 +234,6 @@
         private DateTimePicker dtFecha_Lanzamiento;
         private System.Windows.Forms.Timer timer1;
         private DateTimePicker dtDueracion;
+        private Button btnLimpiarFormulario;
     }
 }

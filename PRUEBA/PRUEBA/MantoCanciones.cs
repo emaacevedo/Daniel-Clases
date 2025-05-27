@@ -14,8 +14,8 @@ namespace PRUEBA
 {
     public partial class MantoCanciones : Form
     {
-        private readonly ConexionBD _conexion;
-        public MantoCanciones(ConexionBD conexion)
+        private readonly IConexionBD _conexion;
+        public MantoCanciones(IConexionBD conexion)
         {
             _conexion = conexion;
             InitializeComponent();
@@ -53,7 +53,7 @@ namespace PRUEBA
             try
             {
                 DataTable result;
-                if (txtId.Text == "") 
+                if (txtId.Text == "")
                 {
                     Dictionary<string, object> parametros = new Dictionary<string, object>
                     {
@@ -64,7 +64,7 @@ namespace PRUEBA
                         { "@id_artista", cmbArtista.SelectedValue }
                     };
 
-                    result = _conexion.EjecutarProcedimiento("AGREGAR_CANCIONES", parametros);  
+                    result = _conexion.EjecutarProcedimiento("AGREGAR_CANCIONES", parametros);
                 }
                 else
                 {
@@ -175,7 +175,7 @@ namespace PRUEBA
                 DataTable result = _conexion.EjecutarProcedimiento("SP_LISTARCANCIONES_ID", parametros);
                 if (result.Rows.Count > 0)
                 {
-                    
+
                     TimeSpan duracion = (TimeSpan)result.Rows[0]["duracion"];
                     DateTime fechaLanzamiento = Convert.ToDateTime(result.Rows[0]["lanzamiento"]);
 
@@ -194,7 +194,17 @@ namespace PRUEBA
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } 
-        }        
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiarFormulario_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
     }
 }

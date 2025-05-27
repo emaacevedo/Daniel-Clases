@@ -35,6 +35,7 @@
             txtNombre = new TextBox();
             btnGuardar = new Button();
             dgGeneroMusical = new DataGridView();
+            btnLimpiarFormulario = new Button();
             ((System.ComponentModel.ISupportInitialize)dgGeneroMusical).BeginInit();
             SuspendLayout();
             // 
@@ -100,11 +101,22 @@
             dgGeneroMusical.CellDoubleClick += dgGeneroMusical_CellDoubleClick;
             dgGeneroMusical.UserDeletingRow += dgGeneroMusical_UserDeletingRow;
             // 
+            // btnLimpiarFormulario
+            // 
+            btnLimpiarFormulario.Location = new Point(355, 336);
+            btnLimpiarFormulario.Name = "btnLimpiarFormulario";
+            btnLimpiarFormulario.Size = new Size(118, 23);
+            btnLimpiarFormulario.TabIndex = 7;
+            btnLimpiarFormulario.Text = "Limpiar Formulario";
+            btnLimpiarFormulario.UseVisualStyleBackColor = true;
+            btnLimpiarFormulario.Click += btnLimpiarFormulario_Click;
+            // 
             // MantoGeneroMusical
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(641, 595);
+            Controls.Add(btnLimpiarFormulario);
             Controls.Add(btnGuardar);
             Controls.Add(txtNombre);
             Controls.Add(txtId);
@@ -129,5 +141,6 @@
         private TextBox txtNombre;
         private Button btnGuardar;
         private DataGridView dgGeneroMusical;
+        private Button btnLimpiarFormulario;
     }
 }

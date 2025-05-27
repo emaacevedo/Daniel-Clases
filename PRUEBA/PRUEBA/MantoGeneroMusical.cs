@@ -14,8 +14,8 @@ namespace PRUEBA
 {
     public partial class MantoGeneroMusical : Form
     {
-        private readonly ConexionBD _conexion;
-        public MantoGeneroMusical(ConexionBD conexion)
+        private readonly IConexionBD _conexion;
+        public MantoGeneroMusical(IConexionBD conexion)
         {
             _conexion = conexion;
             InitializeComponent();
@@ -41,7 +41,8 @@ namespace PRUEBA
                     result = _conexion.EjecutarProcedimiento("SP_INSERTAR_GENERO_MUSICAL", parametros);
 
 
-                } else
+                }
+                else
                 {
                     Dictionary<string, object> parametros = new Dictionary<string, object>
                     {
@@ -149,7 +150,7 @@ namespace PRUEBA
                 DataTable result = _conexion.EjecutarProcedimiento("SP_LISTADO_GENEROMUSICAL_ID", parametros);
 
                 if (result.Rows.Count > 0)
-                { 
+                {
                     txtId.Text = result.Rows[0]["id"].ToString();
                     txtNombre.Text = result.Rows[0]["nombre"].ToString();
                 }
@@ -163,7 +164,12 @@ namespace PRUEBA
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-            
+
+        }
+
+        private void btnLimpiarFormulario_Click(object sender, EventArgs e)
+        {
+            Limpiar();  
         }
     }
 }
